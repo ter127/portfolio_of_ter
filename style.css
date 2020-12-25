@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "DXKPMB-KSCpc-EUC-H";
+  src: url(DXKPMB-KSCpc-EUC-H.ttf) format(truetype);
+}
+.inner-container {
+  width: 1300px;
+  margin: auto;
+  position: relative;
+  /* border: 1px solid gray; */
+}
+/* 애니메이션 모음 */
+/* 나타나기 및 사라지기 */
+@keyframes nata {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.nata {
+  animation: nata 2s 1;
+}
+@keyframes sara {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.sara {
+  animation: sara 2s 1;
+}
+/* 왼쪽으로 나타나기와 오른쪽으로 나타나기 */
+@keyframes left {
+  0% {
+    left: -1400px;
+  }
+  80% {
+    left: 80px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.left {
+  animation: left 1s 1;
+}
+@keyframes right {
+  0% {
+    right: -1400px;
+  }
+  80% {
+    right: 80px;
+  }
+  100% {
+    right: 0;
+  }
+}
+.right {
+  animation: right 1s 1;
+}
+/*헤더 영역 */
+header {
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: -50px;
+  z-index: 99999;
+}
+/* 바 내려가는 애니메이션 */
+.bar-ani {
+  animation: bar 1s 1;
+}
+@keyframes bar {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.menubar {
+  position: absolute;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+}
+.headermenu {
+  color: white;
+  font-size: 15px;
+  font-family: "DXKPMB-KSCpc-EUC-H";
+  margin: 12px 10px;
+}
+/* 나는 '' 테르입니다 부분 */
+.profile {
+  background-color: #d8d8d8;
+}
+.self-introduce {
+  font-family: "DXKPMB-KSCpc-EUC-H";
+  color: white;
+  font-size: 85px;
+  line-height: 170px;
+  padding-top: 200px;
+  padding-bottom: 600px;
+  animation-fill-mode: forwards;
+}
+.Ideer {
+  display: inline;
+}
+/* 두가지 배움 */
+.im {
+  width: 700px;
+  border: 10px solid white;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+.baewumtext {
+  font-size: 70px;
+  font-family: "DXKPMB-KSCpc-EUC-H";
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.baum1 {
+  position: relative;
+  right: -1500px;
+  animation-fill-mode: forwards;
+  padding-top: 300px;
+}
+.baum2 {
+  position: relative;
+  margin-left: 280px;
+  margin-bottom: 300px;
+  padding-top: 300px;
+  left: -1500px;
+  animation-fill-mode: forwards;
+}
+/* 프로젝트에서의 학습 */
+.project {
+  background-color: #e4d2fc;
+}
+.projecttext {
+  font-size: 70px;
+  font-family: "DXKPMB-KSCpc-EUC-H";
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+}
+.project1 {
+  position: relative;
+  padding-top: 300px;
+  right: -1500px;
+  animation-fill-mode: forwards;
+}
+.project2 {
+  position: relative;
+  padding-top: 300px;
+  margin-left: 280px;
+  padding-bottom: 300px;
+  left: -1500px;
+  animation-fill-mode: forwards;
+}
+/* 나에게 협동 */
+.hyeop {
+  background-color: #443655;
+}
+.hyeoptxt {
+  font-size: 70px;
+  font-family: "DXKPMB-KSCpc-EUC-H";
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+}
+.hyeop1 {
+  left: -1400;
+  position: relative;
+  padding-top: 300px;
+  right: -1500px;
+  animation-fill-mode: forwards;
+  padding-bottom: 300px;
+}
+/* 푸터 */
+footer {
+  background-color: #443655;
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  border-bottom: 1px solid #e4d2fc;
+}
+.fm {
+  font-family: "DXKPMB-KSCpc-EUC-H";
+  color: white;
+  margin: auto;
+  font-size: 20px;
+}
+.footerlink {
+  height: 200px;
+  color: rgb(170, 170, 170);
+  font-family: "DXKPMB-KSCpc-EUC-H";
+  text-align: center;
+}
+#footerlink {
+  margin-top: 50px;
+}

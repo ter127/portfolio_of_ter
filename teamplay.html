@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="common.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="teamplay.css" />
     <title>TER 개인 포트폴리오</title>
   </head>
   <body
     onscroll="var nowScroll = document.documentElement.scrollTop;
-  document.querySelector('.scroll').innerHTML = nowScroll"
+  document.querySelector('.scroll').innerHTML = nowScroll
+  if(nowScroll>600) {
+            document.querySelector('#head').classList.add('bar-ani')
+        }"
   >
     <header id="head" style="animation-fill-mode: forwards">
       <div class="inner-container" style="position: relative">
@@ -30,7 +33,32 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="firstmodeul">
+        <div class="sircle clk" id="sircle1">2020 1분기</div>
+        <div class="inner-container">
+          <div class="teamline"></div>
+        </div>
+      </div>
+      <div class="secondmodeul">
+        <div class="sircle clk" id="sircle2">2020 2분기</div>
+        <div class="inner-container">
+          <div class="teamline"></div>
+        </div>
+      </div>
+      <div class="thirdmodeul">
+        <div class="sircle clk" id="sircle3">2020 3분기</div>
+        <div class="inner-container">
+          <div class="teamline"></div>
+        </div>
+      </div>
+      <div class="fourmodeul">
+        <div class="sircle clk" id="sircle4">2020 4분기</div>
+        <div class="inner-container">
+          <div class="teamline"></div>
+        </div>
+      </div>
+    </main>
     <footer>
       <div class="inner-container">
         <div class="footer-menu">

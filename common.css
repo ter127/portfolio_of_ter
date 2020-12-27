@@ -78,14 +78,6 @@ body {
 	-ms-word-break:break-all;  */
   margin: 0 auto;
 }
-
-body {
-  font-size: 1em;
-  font-family: "Noto Sans KR", "나눔 고딕", "nanum gothic", "맑은 고딕",
-    "Malgun Gothic", "verdana", "arial", "dotum", "돋움", sans-serif;
-  color: #222;
-}
-
 select::-ms-expand,
 select::-ms-expand {
   display: none;
@@ -98,7 +90,6 @@ html[data-ie-ver="9"] select {
 }
 
 input[type="password"] {
-  font-family: sans-serif;
 }
 input[type="text"],
 input[type="password"] {

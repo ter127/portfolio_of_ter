@@ -14,21 +14,6 @@
   animation: scroll 40s 99999;
   animation-timing-function: linear;
 }
-@keyframes gainsld {
-  2% {
-    transform: translate(0);
-  }
-  50% {
-    transform: translate(-6600px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-.gainsld {
-  animation: gainsld 40s 99999;
-  animation-timing-function: linear;
-}
 @keyframes la {
   0% {
     height: 30px;
@@ -39,8 +24,6 @@
 }
 .la {
   animation: la 2s 1;
-}
-@keyframes garo {
 }
 /* @keyframes centi */
 /* 개인 프로젝트 */
@@ -70,7 +53,6 @@
   position: relative;
   overflow: hidden;
   animation-fill-mode: forwards;
-  background: linear-gradient(to right, #e4d2fc, white);
 }
 .slide {
   width: 600px;
@@ -85,6 +67,7 @@
 .contain {
   width: 7200px;
   display: flex;
+  transition: 0.5s;
 }
 .inner {
   width: 600px;
@@ -119,11 +102,7 @@
 #classsirclesecond,
 #fnjd {
   background-color: #443655;
-  color: white;
-}
-#fourthline,
-#fivthline {
-  background: linear-gradient(to right, #443655, white);
+  color: rgb(255, 255, 255);
 }
 #fnjd {
   margin-bottom: 200px;
@@ -131,7 +110,7 @@
 .classtxt {
   font-family: "DXKPMB-KSCpc-EUC-H";
   position: absolute;
-  color: white;
+  color: rgb(0, 0, 0);
   opacity: 0;
   animation-fill-mode: forwards;
 }
@@ -142,4 +121,15 @@
 #classtxt2 {
   bottom: 50px;
   left: 220px;
+}
+.buttonbox {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  position: absolute;
+  bottom: 177px;
+}
+.btn {
+  width: 70px;
+  opacity: 0.7;
 }

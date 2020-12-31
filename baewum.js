@@ -47,4 +47,36 @@ window.onload = function(){
      document.querySelector('#classsirclesecond').addEventListener('mouseout',function(){
         document.querySelector('#classsirclesecond').style.background = '#443655'
      })
+     var a = 0
+   //   클릭
+   document.querySelector('#gtnl1').addEventListener('click',function(){
+      if (a < 0)
+      a = a + 600
+      document.querySelector('#secondgain').style.transform = 'translate('+a+'px)'
+   })
+   document.querySelector('#gtnr1').addEventListener('click',function(){
+      if (a > -6600)
+      a = a - 600
+      document.querySelector('#secondgain').style.transform = 'translate('+a+'px)'
+   })
+   document.querySelector('#gtnl2').addEventListener('click',function(){
+      if (a < 0)
+      a = a + 600
+      document.querySelector('#thirdgain').style.transform = 'translate('+a+'px)'
+   })
+   document.querySelector('#gtnr2').addEventListener('click',function(){
+      if (a > -6600)
+      a = a - 600
+      document.querySelector('#thirdgain').style.transform = 'translate('+a+'px)'
+   })
+   document.querySelector('#ctnl1').addEventListener('click',function(){
+      if (a < 0)
+      a = a + 600
+      document.querySelector('#firstclass').style.transform = 'translate('+a+'px)'
+   })
+   document.querySelector('#ctnr1').addEventListener('click',function(){
+      if (a > -6600)
+      a = a - 600
+      document.querySelector('#firstclass').style.transform = 'translate('+a+'px)'
+   })
 }

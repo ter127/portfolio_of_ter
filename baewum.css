@@ -1,135 +1,98 @@
-/* 애니메이션 */
-@keyframes scroll {
-  2% {
-    transform: translatey(0);
+@keyframes hani {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 300px;
+  }
+}
+.hani {
+  animation: hani 0.5s 1;
+}
+@keyframes kam {
+  0% {
+    background-color: #d8d8d8;
   }
   50% {
-    transform: translatey(-2697px);
+    opacity: 0.5;
+    background-color: coral;
   }
   100% {
-    transform: translatey(0);
+    background-color: #d8d8d8;
   }
 }
-.webscroll {
-  animation: scroll 40s 99999;
-  animation-timing-function: linear;
+.kam {
+  animation: kam 2s infinite;
 }
-@keyframes la {
-  0% {
-    height: 30px;
-  }
-  100% {
-    height: 650px;
-  }
-}
-.la {
-  animation: la 2s 1;
-}
-/* @keyframes centi */
-/* 개인 프로젝트 */
-.gaintitle {
-  font-family: "DXKPMB-KSCpc-EUC-H";
-  font-size: 70px;
-  margin-top: 200px;
-  margin-bottom: 200px;
-}
-.gainsircle {
-  font-family: "DXKPMB-KSCpc-EUC-H";
-  background-color: #e4d2fc;
-  color: #909090;
-  width: 200px;
-  height: 200px;
-  border-radius: 190px;
-  border: 5px solid #909090;
-  font-size: 25px;
-  text-align: center;
-  line-height: 200px;
-}
-.line {
-  margin-left: 100px;
-  height: 30px;
-  width: 1100px;
-  border-left: 5px solid #909090;
-  position: relative;
-  overflow: hidden;
-  animation-fill-mode: forwards;
-}
-.slide {
-  width: 600px;
-  height: 450px;
-  position: absolute;
-  right: 245px;
-  bottom: 150px;
-  overflow: hidden;
-  border: 5px solid white;
-  box-shadow: 5px 5px 5px 5px gray;
-}
-.contain {
-  width: 7200px;
-  display: flex;
-  transition: 0.5s;
-}
-.inner {
-  width: 600px;
-}
-.projecttxt {
-  font-family: "DXKPMB-KSCpc-EUC-H";
-  position: absolute;
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-#projecttxt1 {
-  left: 220px;
-  bottom: 10px;
-}
-#projecttxt2 {
-  left: 220px;
-  bottom: 10px;
-}
-/* 학습한 것 */
-.jabji {
-  background-color: white;
-  width: 600px;
-  height: 424px;
-  position: absolute;
-  right: 245px;
-  bottom: 150px;
-  overflow: hidden;
-  border: 5px solid white;
-  box-shadow: 5px 5px 5px 5px gray;
-}
-#classsirclefirst,
-#classsirclesecond,
-#fnjd {
-  background-color: #443655;
-  color: rgb(255, 255, 255);
-}
-#fnjd {
-  margin-bottom: 200px;
-}
-.classtxt {
-  font-family: "DXKPMB-KSCpc-EUC-H";
-  position: absolute;
-  color: rgb(0, 0, 0);
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-#classtxt1 {
-  bottom: 20px;
-  left: 220px;
-}
-#classtxt2 {
-  bottom: 50px;
-  left: 220px;
-}
-.buttonbox {
+.mbutton {
+  padding-top: 100px;
   display: flex;
   justify-content: space-between;
-  width: 600px;
-  position: absolute;
-  bottom: 177px;
+  height: 150px;
+  border-bottom: 3px groove grey;
+  margin-bottom: 40px;
+
+  /* justify-content: center; */
 }
-.btn {
-  width: 70px;
-  opacity: 0.4;
+body {
+  background-color: #d8d8d8;
+}
+.mbtn {
+  font-size: 50px;
+  line-height: 100px;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "DXKPMB-KSCpc-EUC-H";
+  margin: auto;
+}
+.mbtnbox {
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+}
+.containBox {
+  width: 5200px;
+  display: flex;
+  flex-direction: row;
+  transform: translate(-10000px);
+}
+.gain,
+.monjung,
+.juje {
+  font-family: "DXKPMB-KSCpc-EUC-H";
+  position: relative;
+}
+.gaintitle,
+.monjungtitle,
+.jujetitle {
+  font-size: 50px;
+  height: 60px;
+  margin-top: 10px;
+}
+.sldbox {
+  height: 400px;
+  width: 700px;
+  border: 1px solid black;
+  margin: 100px;
+  margin-left: 0px;
+}
+.gaincomment,
+.monjungcomment,
+.jujecomment {
+  position: absolute;
+  left: 780px;
+  top: 160px;
+  height: 400px;
+  width: 500px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.comment {
+  margin-top: 15%;
 }

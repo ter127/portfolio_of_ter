@@ -27,6 +27,7 @@ window.onload = function(){
     var txt4= document.querySelector('#baumtxt2')
     var txt5= document.querySelector('#hyeoptxt')
     var ideer= document.querySelector('.Ideer')
+    var headid= document.querySelector('#headid')
     function outevent(id,color) {
         id.style.color = color
 }
@@ -35,6 +36,7 @@ window.onload = function(){
     id.style.color = 'grey'
 }
    txt3.addEventListener('mouseover',function(){
+    headid.setAttribute('class','aasdasd')
     overevent(txt3)
 });
     txt3.addEventListener('mouseout',function(){
@@ -42,10 +44,12 @@ window.onload = function(){
 });  
     txt3.addEventListener('click',function(){
     ideer.innerHTML = '웹디자인을 배운'
-    window.scrollTo(0,0)
+    headid.innerHTML = '웹디자인을 배운'
+    headid.classList.add('nata')
     document.querySelector('#Ideer').classList.add('nata')
     });
     txt4.addEventListener('mouseover',function(){
+        headid.setAttribute('class','aasdasd')
     overevent(txt4)
 });
     txt4.addEventListener('mouseout',function(){
@@ -53,10 +57,12 @@ window.onload = function(){
 });  
     txt4.addEventListener('click',function(){
     ideer.innerHTML = '디자인과 그림에 관심이 있는'
-    window.scrollTo(0,0)
+    headid.innerHTML = '디자인과 그림에 관심이 있는'
+    headid.classList.add('nata')
     document.querySelector('#Ideer').classList.add('nata')
 });
     txt1.addEventListener('mouseover',function(){
+        headid.setAttribute('class','aasdasd')
     overevent(txt1)
 });
     txt1.addEventListener('mouseout',function(){
@@ -64,10 +70,12 @@ window.onload = function(){
 });  
     txt1.addEventListener('click',function(){
       ideer.innerHTML = '컨셉 아티스트를 꿈꿨던'
-      window.scrollTo(0,0)
+      headid.innerHTML = '컨셉 아티스트를 꿈꿨던'
+      headid.classList.add('nata')
       document.querySelector('#Ideer').classList.add('nata')
 });
     txt2.addEventListener('mouseover',function(){
+        headid.setAttribute('class','aasdasd')
         overevent(txt2);
 });
         txt2.addEventListener('mouseout',function(){
@@ -75,10 +83,12 @@ window.onload = function(){
 });  
         txt2.addEventListener('click',function(){
         ideer.innerHTML = '열대화 해결을 위해 학습한'
-        window.scrollTo(0,0)
+        headid.innerHTML = '열대화 해결을 위해 학습한'
+        headid.classList.add('nata')
         document.querySelector('#Ideer').classList.add('nata')
 });   
     txt5.addEventListener('mouseover',function(){
+        headid.setAttribute('class','aasdasd')
     overevent(txt5);
 });
     txt5.addEventListener('mouseout',function(){
@@ -86,7 +96,8 @@ window.onload = function(){
 });  
     txt5.addEventListener('click',function(){
     ideer.innerHTML = '팀을 이끄는 것이 즐거운'
-    window.scrollTo(0,0)
+    headid.innerHTML = '팀을 이끄는 것이 즐거운'
+    headid.classList.add('nata')
     document.querySelector('#Ideer').classList.add('nata')
     });
 
